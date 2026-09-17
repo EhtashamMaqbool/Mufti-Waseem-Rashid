@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufti Waseem - Islamic Scholar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-dark: #004b40;
+            --primary-light: #00695c;
+            --accent-gold: #cfa052;
+            --accent-gold-light: #e6c587;
+            --text-dark: #2c3e50;
+            --text-gray: #555555;
+            --bg-page: #f4f7f6;
+            --bg-white: #ffffff;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .custom-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon-wrapper {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            color: #1e3a45;
+        }
+
+        .logo-icon-wrapper .fa-moon {
+            font-size: 3.5rem;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            transform: rotate(-25deg);
+        }
+
+        .logo-icon-wrapper .fa-mosque {
+            font-size: 1.8rem;
+            position: absolute;
+            bottom: 5px;
+            right: -2px;
+            color: var(--accent-gold);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e3a45;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .logo-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        .nav-links li a {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .nav-links li a:hover {
+            color: var(--primary-dark);
+            background-color: rgba(0, 75, 64, 0.05);
+        }
+
+        /* --- Hero Section (Half Image Layout) --- */
+        .hero {
+            background: linear-gradient(to right, #004b40 0%, #00695c 100%);
+            color: white;
+            display: flex;
+            align-items: stretch;
+            min-height: 70vh;
+        }
+
+        .hero-content-wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 5rem 3rem 5rem 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Amiri', serif;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold-light);
+        }
+
+        .hero-text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            font-weight: bold;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        .hero-image-container {
+            flex: 1;
+            position: relative;
+            background-image: url('file:///D:/G7%20TECH%20Data/Waseem/image.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        .section-header {
+            text-align: center;
+            margin: 4rem 0 2rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background-color: var(--accent-gold);
+            bottom: 0;
+            left: 20%;
+        }
+
+        /* --- Qualifications (With Hover) --- */
+        .qualifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .qual-card {
+            background-color: var(--bg-white);
+            border-top: 4px solid var(--primary-dark);
+            padding: 2.5rem 2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .qual-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            background-color: #f8fbfb;
+            border-top-color: var(--accent-gold);
+        }
+
+        .qual-card i {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            transition: color 0.3s;
+        }
+
+        .qual-card:hover i {
+            color: var(--primary-dark);
+        }
+
+        .qual-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Services & Rishta Banner --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: var(--accent-gold);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .service-action-link {
+            color: var(--primary-dark);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .service-action-link:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Rishta CTA Banner */
+        .rishta-cta {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 4rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 2px solid var(--accent-gold);
+        }
+
+        .rishta-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold-light);
+        }
+
+        .rishta-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Quran & Hadith --- */
+        .quran-hadith {
+            background-color: var(--bg-white);
+            padding: 4rem 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .verses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .verse-card {
+            background-color: var(--bg-page);
+            padding: 2rem;
+            border-radius: 8px;
+            border-right: 4px solid var(--primary-dark);
+            text-align: center;
+        }
+
+        .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            direction: rtl;
+        }
+
+        .urdu {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            direction: rtl;
+        }
+
+        /* --- Get In Touch (Contact Section) --- */
+        .contact-section {
+            padding: 4rem 0;
+            background-color: var(--bg-page);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-gold);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            background-color: var(--bg-white);
+        }
+
+        .contact-info-box {
+            background: var(--primary-dark);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .contact-info-box h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #112222;
+            color: #d1d1d1;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+            justify-content: center;
+            filter: grayscale(1) brightness(2);
+        }
+
+        .footer-logo .logo-title {
+            color: white;
+        }
+
+        /* --- Modal Styles for Rishta Form --- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem 1rem;
+        }
+
+        .modal-content {
+            background: var(--bg-page);
+            max-width: 900px;
+            margin: 0 auto;
+            border-radius: 10px;
+            position: relative;
+            animation: modalFadeIn 0.3s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-header {
+            background: var(--primary-dark);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            color: var(--accent-gold-light);
+            margin: 0;
+        }
+
+        .close-modal {
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-modal:hover {
+            color: var(--accent-gold);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .form-section-title {
+            color: var(--primary-dark);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-gold);
+            grid-column: 1 / -1;
+            margin-top: 1rem;
+        }
+
+        .rishta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* --- WhatsApp Floating Button --- */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 32px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero-image-container {
+                min-height: 400px;
+                width: 100%;
+            }
+            .hero-text {
+                padding: 3rem 5%;
+                text-align: center;
+            }
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                padding: 1rem 0;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .modal-body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="custom-logo">
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">Mufti Waseem</span>
+                    <span class="logo-tagline">"Islamic Scholar"</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#quran">Quran & Hadith</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content-wrapper">
+            <div class="hero-text">
+                <h1>Guidance Rooted in Quran & Sunnah</h1>
+                <h2>Mufti Waseem Rasheed - M.Phil Scholar & Islamic Jurist</h2>
+                <p>Providing trusted religious guidance, Nikah registration, spiritual solutions, and online Quranic education for the community.</p>
+                <div>
+                    <a href="#services" class="btn">Explore Our Services</a>
+                </div>
+            </div>
+            <!-- Half Div Image Container -->
+            <div class="hero-image-container"></div>
+        </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section id="qualifications" class="container" style="padding-top: 2rem;">
+        <div class="section-header">
+            <h2>Academic & Religious Qualifications</h2>
+        </div>
+        <div class="qualifications-grid">
+            <div class="qual-card">
+                <i class="fas fa-scroll"></i>
+                <h3>Traditional Sciences</h3>
+                <p>Mufti Degree Wifaq-ul-Madaris Al-Islamia Rizvia</p>
+                <small>Dilated Road Bore a Misami Tansanas ul. Mardarle Ahla Cinest</small>
+            </div>
+            <div class="qual-card">
+                <i class="fas fa-stamp"></i>
+                <h3>Official Registration</h3>
+                <p>Certified Nikah Registrar, Pakistan</p>
+                <small>(Khilafat-e-Barelvi Shareef)</small>
+            </div>
+            <div class="qual-card">
+                <i class="fas fa-university"></i>
+                <h3>Modern Academia</h3>
+                <p>M.Phil Scholar</p>
+                <small>Shifa Tameer-e-Millat University, Islamabad</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="background-color: #ebebeb; padding: 2rem 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services & Departments</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Ask a Shar'i Question</h3>
+                    <p>Ask directly about matters of Islamic law, worship, family life, or business.</p>
+                    <a href="#contact" class="service-action-link">ASK NOW &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>Nikah Registration</h3>
+                    <p>Register a Nikah, arrange Nikah Khwani, or apply for NADRA certificates.</p>
+                    <a href="#contact" class="service-action-link">REGISTER NOW &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Spiritual Guidance</h3>
+                    <p>Confidential guidance for spiritual concerns in the light of the Quran and Sunnah.</p>
+                    <a href="#contact" class="service-action-link">GET GUIDANCE &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-house"></i>
+                    <h3>Online Islamic Teaching</h3>
+                    <p>Register for online classes in Quran recitation, Hadith, Fiqh, or Seerah, taught directly by Mufti Sahib.</p>
+                    <a href="#contact" class="service-action-link">ENROLL NOW &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Rishta CTA Section -->
+            <div class="rishta-cta">
+                <h3>Find a Suitable Rishta</h3>
+                <p>Are you looking for a suitable and righteous match for yourself or your loved ones? Submit your details directly to us via WhatsApp for personalized matrimonial matchmaking.</p>
+                <button class="btn" onclick="openRishtaModal()" style="background-color: white; color: var(--primary-dark);">Open Rishta Form</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quran & Hadith Section -->
+    <section id="quran" class="quran-hadith">
+        <div class="container">
+            <div class="section-header">
+                <h2>From the Quran & Hadith</h2>
+            </div>
+            <div class="verses-grid">
+                <div class="verse-card">
+                    <div class="arabic">لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا</div>
+                    <div class="urdu">اللہ تعالی کسی جان پر اس کی استطاعت سے زیادہ بوجھ نہیں ڈالتا۔</div>
+                    <small style="color: var(--text-gray);">Surah Al-Baqara, 2:286</small>
+                </div>
+                <div class="verse-card">
+                    <div class="arabic">إِنَّ مَعَ الْعُسْرِ يُسْرًا</div>
+                    <div class="urdu">بے شک تنگی کے ساتھ آسانی ہے۔</div>
+                    <small style="color: var(--text-gray);">Surah Ash-Sharh, 94:6</small>
+                </div>
+                <div class="verse-card">
+                    <div class="arabic">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</div>
+                    <div class="urdu">تم میں سب سے بہتر وہ شخص ہے جو قرآن سیکھے اور دوسروں کو سکھائے۔</div>
+                    <small style="color: var(--text-gray);">Hadith Sahih al-Bukhari</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact-layout">
+                
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="generalContactForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone / WhatsApp</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Department / Service</label>
+                            <select class="form-control" required>
+                                <option value="">Select an option...</option>
+                                <option>Shar'i Masail (Questions)</option>
+                                <option>Nikah & Certificate Registration</option>
+                                <option>Spiritual Guidance</option>
+                                <option>Online Islamic Teaching</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information Box -->
+                <div class="contact-info-box">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 2rem; opacity: 0.9;">Reach out directly for any question, service, or guidance. We will respond promptly via phone or WhatsApp.</p>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp & Phone</strong><br>
+                            0335-5828919
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Address</strong><br>
+                            Waseemrashid1211@gmail.com
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Availability</strong><br>
+                            Online Services, Shar'i Masail, Registration
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="custom-logo footer-logo">
+                <div class="logo-icon-wrapper">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="logo-text text-left">
+                    <span class="logo-title" style="color:white;">Mufti Waseem</span>
+                    <span class="logo-tagline" style="color:#ccc;">"Islamic Scholar"</span>
+                </div>
+            </div>
+            <p style="max-width: 600px; margin: 0 auto 1.5rem; color: #aaa;">Dedicated to serving the community with sound religious guidance, family registration services, and Quran education in the light of the Quran and Sunnah.</p>
+            <p>&copy; 2026 Mufti Waseem Rasheed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923355828919?text=Hi,%20I'm%20interested%20in%20your%20services." 
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal for Rishta Form -->
+    <div id="rishtaModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Rishta Profile Form</h2>
+                <span class="close-modal" onclick="closeRishtaModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 2rem; color: var(--text-gray);">In the name of <strong>ALLAH</strong>, the most Merciful, the most Beneficient. Fill in the details below. Upon submission, this will generate a pre-filled WhatsApp message for you to send to our matching service.</p>
+                
+                <form id="rishtaWhatsAppForm">
+                    <div class="rishta-grid">
+                        <h3 class="form-section-title">♦️ PERSONAL INFORMATION</h3>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select id="r_gender" class="form-control" required>
+                                <option value="">Select...</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" id="r_name" class="form-control" placeholder="e.g. XYZ" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="text" id="r_age" class="form-control" placeholder="e.g. 28 years" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Height</label>
+                            <input type="text" id="r_height" class="form-control" placeholder="e.g. 5 feet" required>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Physique</label>
+                            <input type="text" id="r_physique" class="form-control" placeholder="e.g. Slim and smart, looks much younger" required>
+                        </div>
+
+                        <h3 class="form-section-title">♦️ EDUCATIONAL DETAILS</h3>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Qualification</label>
+                            <input type="text" id="r_edu" class="form-control" placeholder="e.g. BS Software Engineering" required>
+                        </div>
+
+                        <h3 class="form-section-title">♦️ RELIGION/ DETAILS</h3>
+                        <div class="form-group">
+                            <label>Religion</label>
+                            <input type="text" id="r_religion" class="form-control" value="Islam" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Caste</label>
+                            <input type="text" id="r_caste" class="form-control" placeholder="e.g. Sheikh Siddiqui" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sect</label>
+                            <input type="text" id="r_sect" class="form-control" placeholder="e.g. Sunni" required>
+                        </div>
+
+                        <h3 class="form-section-title">♦️ HOUSE DETAILS</h3>
+                        <div class="form-group">
+                            <label>Current City</label>
+                            <input type="text" id="r_city" class="form-control" placeholder="e.g. Wah Cantt" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Home Town Details</label>
+                            <input type="text" id="r_hometown" class="form-control" placeholder="e.g. Officer's Colony (Own House)" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" id="r_country" class="form-control" value="Pakistan" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Nationality</label>
+                            <input type="text" id="r_nationality" class="form-control" value="Pakistani" required>
+                        </div>
+
+                        <h3 class="form-section-title">♦️ FAMILY DETAILS</h3>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Family Background</label>
+                            <input type="text" id="r_family_bg" class="form-control" placeholder="e.g. Urdu speaking family." required>
+                        </div>
+                        <div class="form-group">
+                            <label>Father's Occupation</label>
+                            <input type="text" id="r_father" class="form-control" placeholder="e.g. Sales Operations Manager" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mother's Occupation</label>
+                            <input type="text" id="r_mother" class="form-control" placeholder="e.g. House wife (retired)" required>
+                        </div>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>Siblings Details</label>
+                            <textarea id="r_siblings" class="form-control" rows="3" placeholder="e.g. 1 elder Sister Software engineer (married). 1 younger brother Graduate. Total 3 siblings" required></textarea>
+                        </div>
+
+                        <h3 class="form-section-title">♦️ REQUIREMENTS</h3>
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label>What are you looking for?</label>
+                            <textarea id="r_reqs" class="form-control" rows="3" placeholder="e.g. Educated, decent humble, responsible person with good job. Balance between deen and duniya. Simple" required></textarea>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; display: flex; gap: 15px;">
+                        <button type="submit" class="btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> Send Details via WhatsApp
+                        </button>
+                        <button type="button" class="btn" onclick="sendViaEmail()" style="flex: 1; background-color: var(--primary-dark); color: white; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="font-size: 1.2rem;"></i> Send via Email
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Modal Functions
+        function openRishtaModal() {
+            document.getElementById('rishtaModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+        }
+
+        function closeRishtaModal() {
+            document.getElementById('rishtaModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('rishtaModal');
+            if (event.target == modal) {
+                closeRishtaModal();
+            }
+        }
+
+        // Gather form data and build message string based on user's exact template
+        function buildMessageString() {
+            return `In the name of *ALLAH* ,
+the most Merciful ,
+the most Beneficient .
+                                
+♦️ *PERSONAL INFORMATION:*
+1: Gender: ${document.getElementById('r_gender').value}
+2: Name: ${document.getElementById('r_name').value}
+3: Age: ${document.getElementById('r_age').value}
+4: Height: ${document.getElementById('r_height').value}
+5: Physique: ${document.getElementById('r_physique').value}
+
+♦️ *EDUCATIONAL DETAILS:*
+1: Qualification: ${document.getElementById('r_edu').value}
+
+♦️ *RELIGION/ DETAILS:*
+1: Religion: ${document.getElementById('r_religion').value}
+2: Caste: ${document.getElementById('r_caste').value}
+3: Sect: ${document.getElementById('r_sect').value}
+
+♦️ *HOUSE DETAILS:*
+1: Current City: ${document.getElementById('r_city').value}
+2: Home Town: ${document.getElementById('r_hometown').value}
+3: Country : ${document.getElementById('r_country').value}
+4: Nationality : ${document.getElementById('r_nationality').value}
+
+♦️ *FAMILY DETAILS:*
+${document.getElementById('r_family_bg').value}
+1: Father's Occupation: ${document.getElementById('r_father').value}
+2: Mother's Occupation: ${document.getElementById('r_mother').value}
+3: Siblings:
+${document.getElementById('r_siblings').value}
+
+♦️ *REQUIREMENTS:*
+${document.getElementById('r_reqs').value}`;
+        }
+
+        // Handle Rishta Form Submit (WhatsApp)
+        document.getElementById('rishtaWhatsAppForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const message = buildMessageString();
+            const phone = "923355828919"; 
+            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            closeRishtaModal();
+            this.reset();
+        });
+
+        // Handle Rishta Form Submit (Email)
+        function sendViaEmail() {
+            const form = document.getElementById('rishtaWhatsAppForm');
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            const message = buildMessageString();
+            const email = "Waseemrashid1211@gmail.com";
+            const subject = "New Rishta Profile Submission";
+            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+            window.location.href = mailtoUrl;
+            closeRishtaModal();
+            form.reset();
+        }
+
+        // Handle General Contact Form
+        document.getElementById('generalContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('JazakAllah Khair! Your message has been received.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
